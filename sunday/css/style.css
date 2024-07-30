@@ -1,0 +1,12 @@
+header img{
+    
+    height: 84.90px;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    list-style-type: none 
+}
