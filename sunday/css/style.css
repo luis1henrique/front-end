@@ -1,12 +1,32 @@
 header img{
     
-    height: 84.90px;
+    height:  84.90px;
+    width: 300px;
 }
 header{
     display: flex;
     justify-content: center;
+    margin: 10px;
+    padding: 15px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 ul{
     display: flex;
-    list-style-type: none 
+    list-style-type: none;
+    margin: 15px;
+}
+li{
+    padding: 15px;
+    font-family: 'inconsolata';
+    display: block;
+    font-size: 12px;
+}
+a{
+    color: black;
+    text-decoration: none;
 }
