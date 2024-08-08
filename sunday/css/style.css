@@ -4,86 +4,98 @@
     padding: 0%;
 }
 header img{
+    margin-top: 10px;
     height:  84.90px; /*esta tando uma altura na imagem que esta no header */
     width: 300px; /* esta tando uma largura na imagem que esta no header*/
 }
 header{
     display: flex; /* Define o elemento como um contêiner flexível */
     justify-content: center; /*centralizar horizontalmente*/
-    margin: 10px; 
+    margin: 10px; /*estar criado um espaço entre o header e o main*/
     padding: 15px;
 }
 nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /*Usa o layout Flexbox para navegação.*/
+    flex-direction: column; /*Organiza os itens flexíveis (elementos filhos) em uma coluna.*/
+    align-items: center; /*Centraliza os itens horizontalmente dentro do contêiner flexível.*/
 
 }
 ul{
-    display: flex;
-    list-style-type: none;
-    margin: 15px;
+    display: flex; /*Usa o layout Flexbox para navegação.*/
+    list-style-type: none; /*Remove os marcadores ou números padrão.*/
+    margin: 15px; /* Adiciona uma margem de 15px ao redor da lista.*/
 }
 li{
-    padding: 15px;
-    font-family: 'inconsolata';
-    display: block;
-    font-size: 12px;
+    padding: 16px; /* Adiciona preenchimento dentro de cada item da lista, criando espaço ao redor do conteúdo.*/
+    font-family: 'inconsolata'; /*Define a fonte como Inconsolata, que é uma fonte monoespaçada.*/
+    display: block; /* Garante que cada item da lista se comporte como um elemento de bloco, ocupando toda a largura disponível.*/
+    font-size: 12px; /* Define o tamanho da fonte para 12 pixels.*/
 }
 a{
-    color: black;
-    text-decoration: none;
+    color: black; /* Define a cor do texto para preto.*/
+    text-decoration: none; /* Remove o sublinhado padrão dos links.*/
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 100%;
-    height: 500px;
-    position: relative;
-    margin: auto;
+    max-width: 100%; /*Garante que o contêiner não exceda a largura do seu pai.*/
+    height: 500px; /* Define uma altura fixa de 500 pixels.*/
+    position: relative; /*Posiciona o contêiner em relação à sua posição normal, o que geralmente é útil para elementos filho posicionados de forma absoluta.*/
+    margin: auto; /*Centraliza o contêiner horizontalmente se ele tiver uma largura fixa*/
 }
 
 .mySlides {
-    display: none;
-    width: 100%;
-    height: 100%;
+    display: none;/*oculta os elementos com a .mySlides*/
+    width: 100%; /* define a largura dos elementos .mySlidescomo 100% do contêiner pai.*/
+    height: 100%; /*define a altura dos elementos .mySlidescomo 100% do contêiner pai.*/
   }
 
 .mySlides img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /*Garante que as imagens dentro dos elementos .mySlidesse ajustem à largura do contêiner .mySlides.*/
+    height: 100%; /*Garante que as imagens caibam na altura do contêiner .mySlides.*/
+    object-fit: cover; /*mantém a proporção da imagem e a recorta para cobrir completamente o contêiner, sem deformar a imagem.*/
 }
 
 .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    cursor: pointer; /*alterar o cursor do mouse quando ele está sobre um o button*/
+    position: absolute; /*é usada para posicionar um elemento de forma absoluta em relação ao seu contêiner*/
+    top: 50%; /*esta definino a distância entre a borda superior do elemento*/
+    width: auto;/* é um valor padrão para a largura de um elemento. */
+    margin-top: -22px;/*define o espaço externo (margem) acima de um elemento.*/
+    padding: 16px;/*é usada para criar espaço interno ao redor do conteúdo de um elemento, dentro de suas bordas. */
+    color: white; /*esta tando uma cor*/
+    font-weight: bold;/*controla a espessura (ou peso) da fonte de um texto.*/
+    font-size: 18px; /*define o tamanho da fonte do texto dentro de um elemento.*/
+    transition: 0.6s ease;/* é usada para criar transições suaves entre os estados de um elemento.*/
+    border-radius: 0 3px 3px 0;/*usado para criar bordas arredondadas em elementos.*/
+    user-select: none;/*é usada para controlar a capacidade do usuário de selecionar texto em um elemento.*/
   }
   .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 0;/*é usada para definir a distância entre a borda direita de um elemento e a borda direita do seu contêiner de referência. */
+    border-radius: 3px 0 0 3px;/*usado para criar bordas arredondadas em elementos.*/
   }
 
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8); /*esta tando um uma cor no fundo dos button da cor preta*/
   }
 
   /* Fading animation */
-.fade {
+  .fade {
+    /* Nome da animação que será aplicada */
     animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+    
+    /* Duração da animação */
+    animation-duration: 1.5s; /* 1.5 segundos para completar a animação */
+}
+
+/* Definição da animação chamada 'fade' */
+@keyframes fade {
+    /* Estado inicial da animação */
+    from {
+        opacity: 0.4; /* Opacidade inicial: 40% */
+    }
+    
+    /* Estado final da animação */
+    to {
+        opacity: 1; /* Opacidade final: 100% (totalmente visível) */
+    }
+}
