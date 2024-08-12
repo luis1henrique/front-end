@@ -11,7 +11,6 @@ header img{
 header{
     display: flex; /* Define o elemento como um contêiner flexível */
     justify-content: center; /*centralizar horizontalmente*/
-    margin: 10px; /*estar criado um espaço entre o header e o main*/
     padding: 15px;
 }
 nav{
@@ -23,13 +22,14 @@ nav{
 ul{
     display: flex; /*Usa o layout Flexbox para navegação.*/
     list-style-type: none; /*Remove os marcadores ou números padrão.*/
-    margin: 15px; /* Adiciona uma margem de 15px ao redor da lista.*/
+    margin: 14px; /* Adiciona uma margem de 15px ao redor da lista.*/
 }
 li{
-    padding: 16px; /* Adiciona preenchimento dentro de cada item da lista, criando espaço ao redor do conteúdo.*/
+    padding: 13px; /* Adiciona preenchimento dentro de cada item da lista, criando espaço ao redor do conteúdo.*/
     font-family: 'inconsolata'; /*Define a fonte como Inconsolata, que é uma fonte monoespaçada.*/
     display: block; /* Garante que cada item da lista se comporte como um elemento de bloco, ocupando toda a largura disponível.*/
     font-size: 12px; /* Define o tamanho da fonte para 12 pixels.*/
+    letter-spacing: 1px;
 }
 a{
     color: black; /* Define a cor do texto para preto.*/
@@ -60,7 +60,7 @@ a{
     position: absolute; /*é usada para posicionar um elemento de forma absoluta em relação ao seu contêiner*/
     top: 50%; /*esta definino a distância entre a borda superior do elemento*/
     width: auto;/* é um valor padrão para a largura de um elemento. */
-    margin-top: -22px;/*define o espaço externo (margem) acima de um elemento.*/
+    margin-top: 2px;/*define o espaço externo (margem) acima de um elemento.*/
     padding: 16px;/*é usada para criar espaço interno ao redor do conteúdo de um elemento, dentro de suas bordas. */
     color: white; /*esta tando uma cor*/
     font-weight: bold;/*controla a espessura (ou peso) da fonte de um texto.*/
@@ -98,4 +98,13 @@ a{
     to {
         opacity: 1; /* Opacidade final: 100% (totalmente visível) */
     }
+}
+.final-container{
+    margin-top: 0px 0px -1px;
+    padding: 75px;
+    text-align: center;
+}
+h2{
+  font-size: 2.7rem;  
+  font-weight: 100;
 }
